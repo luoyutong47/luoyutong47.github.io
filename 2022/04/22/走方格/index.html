@@ -7,7 +7,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/about_avatar.jpg">
   <link rel="icon" href="/img/about_avatar.jpg">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -18,7 +18,7 @@
   
     <meta name="description" content="数学找规律，地图类的一种。用模拟会踩坑，而且坑不好发现。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="小题笔记——走方格">
+<meta property="og:title" content="小题笔记——走方格c&#x2F;c++">
 <meta property="og:url" content="http://sample.com/2022/04/22/%E8%B5%B0%E6%96%B9%E6%A0%BC/index.html">
 <meta property="og:site_name" content="Luoyutong&#39;s blog">
 <meta property="og:description" content="数学找规律，地图类的一种。用模拟会踩坑，而且坑不好发现。">
@@ -32,7 +32,7 @@
 <meta name="twitter:image" content="http://sample.com/img/%E8%B5%B0%E6%A0%BC%E5%AD%90.jpg">
   
   
-  <title>小题笔记——走方格 - Luoyutong&#39;s blog</title>
+  <title>小题笔记——走方格c/c++ - Luoyutong&#39;s blog</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
@@ -190,7 +190,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="小题笔记——走方格">
+            <span class="h2" id="subtitle" title="小题笔记——走方格c/c++">
               
             </span>
 
@@ -249,7 +249,7 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">小题笔记——走方格</h1>
+            <h1 style="display: none">小题笔记——走方格c/c++</h1>
             
             <div class="markdown-body">
               <p><mark>keyword：</mark><br>模拟、数学规律</p>
@@ -270,11 +270,12 @@
 <p><strong>分类原因</strong>：见错误思路记录</p>
 <h1 id="code"><a href="#code" class="headerlink" title="code"></a>code</h1><figure class="highlight c++"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs c++"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;bits/stdc++.h&gt;</span></span><br><br><span class="hljs-keyword">typedef</span> <span class="hljs-type">long</span> <span class="hljs-type">long</span> ll;<br><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><br><span class="hljs-keyword">struct</span> <span class="hljs-title class_">Data</span><br><br>&#123;<br><br>    <span class="hljs-type">int</span> a;<br><br>    <span class="hljs-type">int</span> b;<br><br>&#125; dot1, dot2;<br><br>ll t1, t2, ans, d,first;<br><br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span><br><span class="hljs-function"></span><br><span class="hljs-function"></span>&#123;<br><br>    cin &gt;&gt; dot1.a &gt;&gt; dot1.b &gt;&gt; dot2.a &gt;&gt; dot2.b;<br><br>    t1 = <span class="hljs-built_in">abs</span>(dot1.a - dot2.a);<br><br>    t2 = <span class="hljs-built_in">abs</span>(dot1.b - dot2.b);<br><br>    first = <span class="hljs-built_in">min</span>(t1, t2);<span class="hljs-comment">//横平竖直选一个短的走</span><br><br>    ans = first*<span class="hljs-number">2</span>;<br><br>    d = <span class="hljs-built_in">max</span>(t1, t2) - first;<br><br>    <span class="hljs-comment">//假设平齐了，其实是要减去已经走了的横坐标，但是因为是45°所以直接减first</span><br><br>    <span class="hljs-keyword">if</span>(d%<span class="hljs-number">2</span>==<span class="hljs-number">0</span>)<br><br>        ans += d * <span class="hljs-number">2</span>;<br><br>    <span class="hljs-keyword">else</span><br><br>        ans += d * <span class="hljs-number">2</span> - <span class="hljs-number">1</span>;<br><br>    cout &lt;&lt; ans &lt;&lt; endl;<br><br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br><br>&#125;<br></code></pre></div></td></tr></table></figure>
 
-<h1 id="错误记录"><a href="#错误记录" class="headerlink" title="错误记录"></a>错误记录</h1><p>本来采用了模拟的思路。第一步通过比较出发点和结束点的横纵坐标来确定。如果前一步是上下，则后一次是左右，具体左右根据所在点和结尾点的横坐标大小比较来确定。<br>这貌似没问题，当时也花了很多时间在找原因。其实从例题来看就知道，如果第一步走上，则不是最短的。走到B点会发现没法向右走。<br><strong>即</strong>：当中途达到与结果点相平行或竖直的点处，如果间隔d是奇数，则下一步必须是朝着结果点方向的。而这就要求前一步必须与结果点方向垂直，不能是任意的。按原先的计算方式是可能实现不了这个特殊要求。</p>
+<h1 id="错误记录"><a href="#错误记录" class="headerlink" title="错误记录"></a>错误记录</h1><p>本来采用了模拟的思路。第一步通过比较出发点和结束点的横纵坐标来确定。如果前一步是上下，则后一次是左右，具体左右根据所在点和结尾点的横坐标大小比较来确定。<br>这貌似没问题，当时也花了很多时间在找原因。其实从例图来看就知道，如果第一步走上，则不是最短的。走到B点会发现没法向右走。<br><strong>即</strong>：当中途达到与结果点相平行或竖直的点处，如果间隔d是奇数，则下一步必须是朝着结果点方向的。而这就要求前一步必须与结果点方向垂直，不能是任意的。按原先的计算方式是可能实现不了这个特殊要求。</p>
 <h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><ul>
 <li>模拟确实是解决很多题的一个方式，但是归纳数学式子往往是更多算法题的思路。</li>
 <li>可以通过将过程分段，设置特殊节点的方式，然后人工走程序的逻辑，来查出错误。（因为分段了，所以点可以拉的远一点，也不怕乱）</li>
 <li>另外，在写笔记的时候弄错了插入图片的相对路径表达。使用..&#x2F;表示返回上一级目录。.&#x2F;表示同级目录。</li>
+<li>特别鸣谢npy提供例图</li>
 </ul>
 
             </div>
