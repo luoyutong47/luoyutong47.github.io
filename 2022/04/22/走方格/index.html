@@ -252,7 +252,7 @@
             <h1 style="display: none">小题笔记——走方格</h1>
             
             <div class="markdown-body">
-              <p>&#x3D;&#x3D;keyword：&#x3D;&#x3D;<br>模拟、数学规律</p>
+              <p><mark>keyword：</mark><br>模拟、数学规律</p>
 <p><em>（但是这个题用模拟不对）</em></p>
 <h1 id="题意"><a href="#题意" class="headerlink" title="题意"></a>题意</h1><p>从点$(x_1,y_1)$走到$(x_2,y_2)$点(均是整数)，每步能走一个单位长度，只能沿平行于坐标轴的方向运动，每走一步需要向左或向右旋转90°，求最少需要走多少步。<br>所有坐标满足−10000≤x,y≤10000.</p>
 <h1 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h1><p><img src="/../img/%E8%B5%B0%E6%A0%BC%E5%AD%90.jpg" srcset="/img/loading.gif" lazyload alt="示例"></p>
@@ -479,6 +479,48 @@
 
 
 
+
+  
+
+  
+    <!-- MathJax -->
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        },
+        loader: {
+          load: ['ui/lazy']
+        },
+        options: {
+          renderActions: {
+            findScript: [10, doc => {
+              document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+                const display = !!node.type.match(/; *mode=display/);
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                const text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = { node: text, delim: '', n: 0 };
+                math.end = { node: text, delim: '', n: 0 };
+                doc.math.push(math);
+              });
+            }, '', false],
+            insertedScript: [200, () => {
+              document.querySelectorAll('mjx-container').forEach(node => {
+                let target = node.parentNode;
+                if (target.nodeName.toLowerCase() === 'li') {
+                  target.parentNode.classList.add('has-jax');
+                }
+              });
+            }, '', false]
+          }
+        }
+      };
+    </script>
+
+    <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" ></script>
+
+  
 
 
 
