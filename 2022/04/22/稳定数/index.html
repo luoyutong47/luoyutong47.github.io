@@ -71,7 +71,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"sample.com","root":"/","version":"1.9.2","typing":{"enable":true,"typeSpeed":76,"cursorChar":"★","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+    var CONFIG = {"hostname":"sample.com","root":"/","version":"1.9.2","typing":{"enable":true,"typeSpeed":75,"cursorChar":"★","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -298,7 +298,7 @@
 <li>第一项：前面n-1项已经满足了有m个稳定数的要求了，那么第n个数可以就放在n位，或者和前面m个稳定数中的任何一个（如k）交换</li>
 <li>第二项：前面n-1项不满足要求，需要将n与某个非稳定的k交换才可以，而这样的操作能增加一个稳定数，故前面n-1共有m-1个稳定数。k有(n-1-(m-1))种选择。</li>
 </ul>
-<p><img src="../img/exchange.jpg" srcset="/img/loading.gif" lazyload alt="讲解图" /></p>
+<p><img src="/img/exchange.jpg" srcset="/img/loading.gif" lazyload alt="讲解图" /></p>
 <h6 id="初始条件"><a class="markdownIt-Anchor" href="#初始条件"></a> 初始条件：</h6>
 <ul>
 <li>m==0的时候只有一种情况，即按顺序。故D[i][0]==1</li>

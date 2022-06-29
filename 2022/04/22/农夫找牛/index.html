@@ -71,7 +71,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"sample.com","root":"/","version":"1.9.2","typing":{"enable":true,"typeSpeed":76,"cursorChar":"★","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+    var CONFIG = {"hostname":"sample.com","root":"/","version":"1.9.2","typing":{"enable":true,"typeSpeed":75,"cursorChar":"★","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -282,7 +282,7 @@
 <p>农夫需要在一张10*10的地图里抓牛。农夫和牛的移动规则相同：每次朝着原来的方向前进一格；如果前方是障碍物或者地图边界，那么本次顺时针旋转90°。初始方向向上。计算并输出农夫需要多少步才能抓到牛（二者在同一格相遇），<strong>永远不相遇则输出0</strong></p>
 <p>•保证地图中只有一个F和一个C，且F和C一开始不会在同一个格子里<br />
 •如果农夫和牛在移动时穿过对方，但没有在同一格相遇，我们不认为他们相遇了</p>
-<p><img src="../img/%E5%86%9C%E5%A4%AB%E6%89%BE%E7%89%9B.jpg" srcset="/img/loading.gif" lazyload alt="题意解释图" /></p>
+<p><img src="/img/%E5%86%9C%E5%A4%AB%E6%89%BE%E7%89%9B.jpg" srcset="/img/loading.gif" lazyload alt="题意解释图" /></p>
 <h1 id="思路"><a class="markdownIt-Anchor" href="#思路"></a> 思路：</h1>
 <ol>
 <li>
