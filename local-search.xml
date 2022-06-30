@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>HTML基础元素</title>
+    <link href="/2022/06/30/HTML%E5%9F%BA%E7%A1%80%E5%85%83%E7%B4%A0/"/>
+    <url>/2022/06/30/HTML%E5%9F%BA%E7%A1%80%E5%85%83%E7%B4%A0/</url>
+    
+    <content type="html"><![CDATA[<p>HTML 元素指的是从开始标签（start tag）到结束标签（end tag）的所有代码。</p><p>编写时保证规范：不要忘记结束标签，关闭空元素，使用小写标签</p><h2 id="在实例中讲解"><a class="markdownIt-Anchor" href="#在实例中讲解"></a> 在实例中讲解</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>  <span class="hljs-comment">&lt;!--&lt;html&gt;和&lt;/html&gt;之间的文本描述网页--&gt;</span><br><br><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>  <span class="hljs-comment">&lt;!--所有头部元素的容器，描述了文档的各种属性和信息--&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>文档标题<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span><br><br><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>  <span class="hljs-comment">&lt;!--&lt;body&gt;和&lt;/body&gt;之间的文本是可见的页面内容--&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>一级标题<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">hr</span>/&gt;</span>  <span class="hljs-comment">&lt;!--这是水平分割线--&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>一个段落<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><br><span class="hljs-comment">&lt;!--默认情况下，HTML 会自动地在块级元素前后添加一个额外的空行，比如段落、标题元素前后。--&gt;</span><br><br><span class="hljs-tag">&lt;<span class="hljs-name">br</span>/&gt;</span>  <span class="hljs-comment">&lt;!--换行，/是关闭空元素的方法，与&lt;br&gt;相比,这样更加保险和规范--&gt;</span><br><br><span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span><br></code></pre></td></tr></table></figure><p>以上代码运行效果截图：</p><p>此为标签页显示情况<br /><img src="/img/html%E5%9F%BA%E7%A1%80%E5%85%83%E7%B4%A0%E7%A4%BA%E4%BE%8B1.png" alt="html基础标签页" /></p><p>此为网页显示情况<br /><img src="/img/html%E5%9F%BA%E7%A1%80%E5%85%83%E7%B4%A0%E7%A4%BA%E4%BE%8B2.png" alt="html基础网页" /></p><p><strong>易错易漏：</strong></p><ul><li>漏掉头部元素</li><li>头部元素放于body之前</li><li>在notepad++里面写了html之后，文件保存后缀要改为html</li><li>当显示页面时，浏览器会<strong>移除源代码中多余的空格和空行</strong>。所有连续的空格或空行都会被算作一个空格。需要注意的是，HTML 代码中的所有连续的空行（换行）也被显示为一个空格。</li></ul><p><img src="/img/html%E6%AE%B5%E8%90%BD.png" alt="html段落处理" /></p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>HTML</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>小题笔记——农夫找牛c/c++</title>
     <link href="/2022/04/22/%E5%86%9C%E5%A4%AB%E6%89%BE%E7%89%9B/"/>
     <url>/2022/04/22/%E5%86%9C%E5%A4%AB%E6%89%BE%E7%89%9B/</url>
