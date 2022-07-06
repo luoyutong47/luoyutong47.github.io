@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>HTML字符实体</title>
+    <link href="/2022/07/06/HTML%E5%AD%97%E7%AC%A6%E5%AE%9E%E4%BD%93/"/>
+    <url>/2022/07/06/HTML%E5%AD%97%E7%AC%A6%E5%AE%9E%E4%BD%93/</url>
+    
+    <content type="html"><![CDATA[<p>在 HTML 中，某些字符是预留的。在 HTML 中不能使用小于号（&lt;）和大于号（&gt;），这是因为浏览器会误认为它们是标签。如果希望正确地显示预留字符，我们必须在 HTML 源代码中使用<strong>字符实体</strong>（character entities）作替换表示。字符实体包括实体名称和实体编号两种表示方法。</p><p>可以类比理解c语言里面的关键字是不能做变量名的。</p><p>例如，不间断空格的字符实体是 ，那么我们需要用&amp;nbsp代表空格</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>这里有一个空格<span class="hljs-symbol">&amp;nbsp;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><br></code></pre></td></tr></table></figure><p><mark>键盘上不存在的字符也可以由实体名称或实体编号代替。</mark></p><h2 id="常用的字符实体"><a class="markdownIt-Anchor" href="#常用的字符实体"></a> 常用的字符实体</h2><table><thead><tr><th>字符</th><th>字符名称</th></tr></thead><tbody><tr><td>∏</td><td>&amp;prod;</td></tr><tr><td>∑</td><td>&amp;sum;</td></tr><tr><td>Δ</td><td>&amp;Delta;</td></tr><tr><td>©</td><td>&amp;copy;</td></tr><tr><td>←</td><td>&amp;larr;</td></tr><tr><td>↑</td><td>&amp;uarr;</td></tr><tr><td>→</td><td>&amp;rarr;</td></tr><tr><td>↓</td><td>&amp;darr;</td></tr><tr><td>&lt;</td><td>&amp;lt;</td></tr><tr><td>&gt;</td><td>&amp;gt;</td></tr><tr><td>™</td><td>&amp;trade;</td></tr><tr><td>不间断空格（即不会被处理的空格）</td><td>&amp;nbsp;</td></tr></tbody></table><p><strong>一定不要忘记在最后打上分号！</strong></p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>HTML</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>HTML头部元素</title>
     <link href="/2022/07/05/HTML%E5%A4%B4%E9%83%A8%E5%85%83%E7%B4%A0/"/>
     <url>/2022/07/05/HTML%E5%A4%B4%E9%83%A8%E5%85%83%E7%B4%A0/</url>
